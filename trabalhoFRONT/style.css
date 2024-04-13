@@ -1,0 +1,58 @@
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3)
+    font-size: 10px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-decoration: capitalize;
+    transition: 0.2 linear;
+}
+
+body{
+    background-color:var(--main-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--bg);
+}
+
+.header section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom:0 ;
+} 
+
+.navbar{
+    margin-left: 20px;
+}
+.navbar a {
+    background-color: rgba(255, 255, 255, 0.2); /* Adiciona um fundo transparente */
+    padding: 10px 15px; /* Adiciona espaço interno */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+  }
+
+.login{
+    margin-right:20px;
+}
+.login-box{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
