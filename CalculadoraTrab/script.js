@@ -178,13 +178,13 @@ class Calculadora {
         this.memoria = 0;
     }
 
-    //MÉTODO PARA DEFINIR O VALOR DE PI NO VISOR
+    //Tecla PI: define o valor de pi no visor
     teclaPi() {
         if (this.estadoErro) return;
         this.nrVisor = Math.PI.toFixed(10); 
         this.iniciouSegundo = false; 
     }
-    // MÉTODO PARA ELEVAR O NÚMERO AO QUADRADO
+    //Tecla ao quadrado:define o valor do número atual ao quadrado
     teclaAOQUADRADO() {
         if (this.estadoErro) return;
         let num = parseFloat(this.nrVisor);
@@ -251,12 +251,12 @@ let teclaRM = () => {
 let teclaCLM = () => {
     calculadora.teclaCLM();
 }
-// TECLA PI: DEFINE O VALOR DO PI NO VISOR
+// MÉTODO PARA DEFINIR O VALOR DE PI NO VISOR
 let teclaPi = () => {
     calculadora.teclaPi();
     atualizaVisor();
 }
-//TECLA AO QUADRADO: DEFINE O VALOR DO NÚMERO ATUAL AO QUADRADO
+  // MÉTODO PARA ELEVAR O NÚMERO AO QUADRADO
 let teclaAOQUADRADO = () =>{
     calculadora.teclaAOQUADRADO();
     atualizaVisor;
