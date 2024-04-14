@@ -129,10 +129,10 @@ class Calculadora {
             case this.op.INVERSO: // Adicionando o caso para o inverso
                 resultado = 1 / num2;
                 break;
-            case  this.op.PI:
+            case  this.op.PI: //Adicionado caso para operação de π
                 resultado = Math.PI * num2;
                 break;
-           case this.op.AOQUADRADO:
+           case this.op.AOQUADRADO:   //Adicionado caso para operação de ao quadrado
            resultado = num2 * num2;
                 break;  
 
@@ -177,13 +177,14 @@ class Calculadora {
         if (this.estadoErro) return;
         this.memoria = 0;
     }
+
+    //MÉTODO PARA DEFINIR O VALOR DE PI NO VISOR
     teclaPi() {
         if (this.estadoErro) return;
-        this.nrVisor = Math.PI.toFixed(10); // Ajusta o número de casas decimais para 10
-        this.ptDecimal = true;
-        this.iniciouSegundo = false; // Marca como iniciado o segundo número para evitar concatenar ao valor de π
-         // Permite adicionar casas decimais após π
+        this.nrVisor = Math.PI.toFixed(10); 
+        this.iniciouSegundo = false; 
     }
+    // MÉTODO PARA ELEVAR O NÚMERO AO QUADRADO
     teclaAOQUADRADO() {
         if (this.estadoErro) return;
         let num = parseFloat(this.nrVisor);
@@ -255,6 +256,7 @@ let teclaPi = () => {
     calculadora.teclaPi();
     atualizaVisor();
 }
+//TECLA AO QUADRADO: DEFINE O VALOR DO NÚMERO ATUAL AO QUADRADO
 let teclaAOQUADRADO = () =>{
     calculadora.teclaAOQUADRADO();
     atualizaVisor;
